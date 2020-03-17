@@ -1,0 +1,18 @@
+// 예제 9.1  npm 스크립트 추가하기(package.json)
+
+{
+  //...
+  "scripts": {
+    //...
+    "test": "jest --coverage",
+    "test:w": "jest --watch --coverage",
+    "jest": {
+      "testEnvironment": "jsdom",
+      "setupFiles": ["raf/polyfill", "./test/setup.js"]
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+ssh://git@github.com/react-in-action/letters-social.git"
+    },
+    "author": "Mark Thomas <hello@ifelse.io>",
+  //...
