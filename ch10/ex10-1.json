@@ -1,0 +1,16 @@
+// 예제 10.1  리덕스 액션의 예시
+
+{
+  type: 'UPDATE_USER_PROFILE',
+  payload: {
+    email: 'hello@ifelse.io'
+  }
+}
+
+{
+  type: 'LOADING'
+}
+
+{
+  type: 'appName/dashboard/insights/load'
+}
