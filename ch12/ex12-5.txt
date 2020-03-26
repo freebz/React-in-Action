@@ -1,0 +1,31 @@
+예제 12.5  첫 번째 서버 측 렌더링 응답의 결과
+
+$ npm run server:dev
+
+// ... 다른 터미널 세션에서 실행하자.
+
+$ curl -v http://localhost:3000
+> GET / HTTP/1.1
+> Host: localhost:3000
+> User-Agent: curl/7.51.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< X-Powered-By: react
+< X-XSS-Protection: 1; mode=block
+< X-Frame-Options: SAMEORIGIN
+< X-Download-Options: noopen
+< X-Content-Type-Origin: *
+< Content-Type: text/html; charset=utf-8
+< Content-Length: 144
+< ETag: W/"90-gXhNJUy73fc2MSrpr7eaKDZ7OV8"
+< Vary: Accept-Encoding
+< X-Response-Type: 0.795ms
+< Date: Mon, 08 May 2017 10:26:55 GMT
+< Connection: keep-alive
+<
+* Curl_http_doen: called premature == 0
+* Connection #0 to host localhost left intact
+
+<div data-reactroot="">Rendered on the server at Mon May 08 2017 03:26:55
+     GMT-0700 (PDT)</div>

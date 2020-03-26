@@ -1,0 +1,37 @@
+예제 12.2  간단한 HTTP 요청
+
+> GET / HTTP/1.1
+> HOST: example.com
+> User-Agent: curl/7.51.0
+> Accept: */*
+
+< HTTP/1.1 200 OK
+< Cache-Control: max-age=604800
+< Content-Type: text/html
+< Date: Mon, 01 May 2017 16:34:13 GMT
+< Etag: "359670651+gzip+ident"
+< Expires: Mon, 08 May 2017 16:34:13 GMT
+< Last-Modified: Fri, 09 Aug 2013 23:54:35 GMT
+< Server: ECS (rvh/81A7)
+< Vary: Accept-Encoding
+< X-Cache: HIT
+< Content-Length: 1270
+<
+<!doctype html>
+<html>
+<head>
+  <title>Example Domai</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+<div>
+  <h1>Example Domain</h1>
+  <p>This domain is established to be used for illustrative examples in documents. You may use this domain in examples without prior coordination or asking for permission.</p>
+  <p><a href="http://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
